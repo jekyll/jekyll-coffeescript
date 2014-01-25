@@ -1,4 +1,5 @@
 require "jekyll"
+require "coffee-script"
 require "jekyll/converters/coffeescript"
 
 module Jekyll
