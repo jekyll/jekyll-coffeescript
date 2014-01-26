@@ -18,6 +18,8 @@ Or install it yourself as:
 
     $ gem install jekyll-coffeescript
 
+**Note: `jekyll-coffeescript` requires Ruby 1.9.3 or greater.**
+
 ## Usage
 
 In your Jekyll site, create CoffeeScript files that start with the following
