@@ -8,16 +8,13 @@ rvm:
 - 2.0.0
 - 1.9.3
 script: script/cibuild
-after_script:
-- script/rebund upload
+after_script: script/rebund upload
 notifications:
   irc:
     on_success: change
     on_failure: change
-    channels:
-    - irc.freenode.org#jekyll
-    template:
-    - '%{repository}#%{build_number} (%{branch}) %{message} %{build_url}'
+    channels: irc.freenode.org#jekyll
+    template: '%{repository}#%{build_number} (%{branch}) %{message} %{build_url}'
   email:
     on_success: never
     on_failure: never
