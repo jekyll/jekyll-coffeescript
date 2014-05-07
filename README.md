@@ -2,7 +2,7 @@
 
 A CoffeeScript converter for Jekyll.
 
-[![Build Status](https://travis-ci.org/jekyll/jekyll-coffeescript.png?branch=master)](https://travis-ci.org/jekyll/jekyll-coffeescript)
+[![Build Status](https://travis-ci.org/jekyll/jekyll-coffeescript.svg?branch=master)](https://travis-ci.org/jekyll/jekyll-coffeescript)
 
 ## Installation
 
