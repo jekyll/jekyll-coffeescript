@@ -56,7 +56,7 @@ JS
   end
 
   context "converting CoffeeScript" do
-    it "produces CSS" do
+    it "produces JS" do
       expect(converter.convert(coffeescript_content)).to eql(js_content)
     end
   end
