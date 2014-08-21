@@ -45,7 +45,7 @@ JS
 
   context "matching file extensions" do
     it "matches .coffee files" do
-      expect(converter.matches(".coffee")).to be_true
+      expect(converter.matches(".coffee")).to be(true)
     end
   end
 
