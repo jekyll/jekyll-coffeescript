@@ -6,6 +6,8 @@
 
 ### Bug Fixes
 
+  * `Converters::CoffeeScript#matches` should never return anything but `true` or `false` (#7)
+
 ### Development Fixes
 
   * Fix up some docs (#2)
