@@ -5,7 +5,7 @@ module Jekyll
       priority :low
 
       def matches(ext)
-        !!(ext =~ /^\.coffee$/i)
+        ext.downcase == ".coffee"
       end
 
       def output_ext(ext)
