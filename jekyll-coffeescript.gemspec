@@ -12,9 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/jekyll/jekyll-coffeescript"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.files         = `git ls-files`.split($/).grep(%r{(lib/)})
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "coffee-script", "~> 2.2"

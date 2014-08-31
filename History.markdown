@@ -1,8 +1,4 @@
-## HEAD
-
-### Major Enhancements
-
-### Minor Enhancements
+## 1.0.1 / 2014-08-31
 
 ### Bug Fixes
 
