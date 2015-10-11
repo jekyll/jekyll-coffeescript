@@ -13,6 +13,7 @@ module Jekyll
       end
 
       def convert(content)
+        require "coffee-script"
         ::CoffeeScript.compile(content)
       end
     end
