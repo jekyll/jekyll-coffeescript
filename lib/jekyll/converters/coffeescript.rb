@@ -4,6 +4,11 @@ module Jekyll
       safe true
       priority :low
 
+      def setup
+        require "coffee-script"
+        @setup = true
+      end
+
       def matches(ext)
         ext.downcase == ".coffee"
       end
@@ -13,7 +18,7 @@ module Jekyll
       end
 
       def convert(content)
-        require "coffee-script"
+        setup unless @setup
         ::CoffeeScript.compile(content)
       end
     end
