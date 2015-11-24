@@ -1,13 +1,23 @@
-language: ruby
-cache: bundler
 sudo: false
+language: ruby
 rvm:
+- 2.0
+- 2.1
 - 2.2
-- 2.1.0
-- 2.0.0
-- 1.9.3
+matrix:
+  include:
+    - rvm: 1.9.3
+      env: JEKYLL_VERSION=2.5
+env:
+  matrix:
+    - JEKYLL_VERSION=2.5
+    - JEKYLL_VERSION=3.0
+branches:
+  only:
+    - master
+install:
+- travis_retry script/bootstrap
 script: script/cibuild
-
 notifications:
   irc:
     on_success: change
@@ -15,26 +25,7 @@ notifications:
     channels:
     - irc.freenode.org#jekyll
     template:
-    - '%{repository}#%{build_number} (%{branch}) %{message} %{build_url}'
+    - '%{repository}#%{build_number} %{message} %{build_url}'
   email:
     on_success: never
-    on_failure: never
-
-matrix:
-  exclude:
-    - rvm: 1.9.3
-      env: JEKYLL_VERSION=3.0.0
-    - env: JEKYLL_VERSION=2.0
-      rvm: 2.1
-    - rvm: 2.2
-      env: JEKYLL_VERSION=2.0
-
-env:
-  matrix:
-#    - ""
-    - JEKYLL_VERSION=2.0
-    - JEKYLL_VERSION=3.0.0
-
-  global:
-  - secure: c3L8fa91PLodwiKuNevq5/Froh2h3PPG22NMavTBnu2YLBeSnPHMc2yasEAbH9hBKkw0LqMCdqF13uaQWdulI0Ez5ylUvg2tUi1KPRjQkSBZgZZVurQkCwNvhbttRYLgwDbuDBLguVFkl1q4/eFTCcTPW/20p0tsCWKpddmjO0I=
-  - secure: H4CFVnFXtDcm6R3d6038RbYA9uV0yJ2fHb7GDwQmGJWIK8zB5FEzOykGT+C6/7hrVXy5fNK4fn+Zrt/WPRmxiMSirLWiMt+X7Cu+stFdMkdAwQq32/rFCSzbTszoCs+pCFGYEW2Iyj9rs2tgkxy8hKvG7ypDZ4keSKyxm8kBAMA=
+    on_failure: change
