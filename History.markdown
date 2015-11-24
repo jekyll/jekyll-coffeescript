@@ -1,6 +1,7 @@
 ## HEAD
 
   * Load converter only when used. (#11)
+  * Test against Jekyll 2 & Jekyll 3 (#13)
 
 ## 1.0.1 / 2014-08-31
 
