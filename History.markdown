@@ -3,6 +3,10 @@
   * Load converter only when used. (#11)
   * Test against Jekyll 2 & Jekyll 3 (#13)
 
+### Bug Fixes
+
+  * Lock coffee-script-source (#16)
+
 ## 1.0.1 / 2014-08-31
 
 ### Bug Fixes
@@ -14,6 +18,6 @@
   * Fix up some docs (#2)
   * Change CSS to JS in spec (#6)
 
-### 1.0.0 / 2014-01-25
+## 1.0.0 / 2014-01-25
 
   * Birthday!
