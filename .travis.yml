@@ -4,10 +4,6 @@ rvm:
 - 2.0
 - 2.1
 - 2.2
-matrix:
-  include:
-    - rvm: 1.9.3
-      env: JEKYLL_VERSION=2.5
 env:
   matrix:
     - JEKYLL_VERSION=2.5
