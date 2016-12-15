@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files`.split($/).grep(%r{(lib/)})
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "coffee-script-source", "~> 1.11.1"
   spec.add_runtime_dependency "coffee-script", "~> 2.2"
 
   spec.add_development_dependency "jekyll", ENV['JEKYLL_VERSION'] ? "~> #{ENV['JEKYLL_VERSION']}" : ">= 2.0"
