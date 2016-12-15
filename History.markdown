@@ -1,3 +1,7 @@
+## HEAD
+
+  * Stop testing Ruby 1.9 (#17)
+
 ## 1.0.2 / 2016-12-15
 
   * Lock coffee-script-source (#16)
