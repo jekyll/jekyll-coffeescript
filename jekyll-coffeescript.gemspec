@@ -1,24 +1,25 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'jekyll-coffeescript/version'
+require "jekyll-coffeescript/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-coffeescript"
   spec.version       = Jekyll::Coffeescript::VERSION
   spec.authors       = ["Parker Moore"]
   spec.email         = ["parkrmoore@gmail.com"]
-  spec.summary       = %q{A CoffeeScript converter for Jekyll.}
+  spec.summary       = "A CoffeeScript converter for Jekyll."
   spec.homepage      = "https://github.com/jekyll/jekyll-coffeescript"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/).grep(%r{(lib/)})
+  spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR).grep(%r!(lib/)!)
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "coffee-script-source", "~> 1.11.1"
   spec.add_runtime_dependency "coffee-script", "~> 2.2"
 
-  spec.add_development_dependency "jekyll", ENV['JEKYLL_VERSION'] ? "~> #{ENV['JEKYLL_VERSION']}" : ">= 2.0"
+  spec.add_development_dependency "jekyll", ENV["JEKYLL_VERSION"] ? "~> #{ENV["JEKYLL_VERSION"]}" : ">= 2.0"
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
