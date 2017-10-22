@@ -6,6 +6,7 @@
 
   * Test against Ruby 2.1 to 2.4 (#20)
   * Define path with __dir__ (#18)
+  * Inherit Jekyll&#39;s rubocop config for consistency (#19)
 
 ## 1.0.2 / 2016-12-15
 
