@@ -8,6 +8,7 @@
   * Define path with __dir__ (#18)
   * Inherit Jekyll&#39;s rubocop config for consistency (#19)
   * Stop testing against Jekyll 2.5 (#22)
+  * Add Rubocop to CI (#21)
 
 ## 1.0.2 / 2016-12-15
 
