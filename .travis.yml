@@ -9,6 +9,10 @@ env:
   matrix:
     - JEKYLL_VERSION=2.5
     - JEKYLL_VERSION=3.0
+matrix:
+  include:
+    rvm: 2.4
+    script: script/fmt
 branches:
   only:
     - master
