@@ -1,4 +1,4 @@
-require 'spec_helper'
+require "spec_helper"
 
 describe(Jekyll::Converters::CoffeeScript) do
   let(:configuration) { Jekyll::Configuration::DEFAULTS }
@@ -60,5 +60,4 @@ JS
       expect(converter.convert(coffeescript_content)).to eql(js_content)
     end
   end
-
 end

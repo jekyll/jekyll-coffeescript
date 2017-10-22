@@ -10,10 +10,10 @@ module Jekyll
       end
 
       def matches(ext)
-        ext.downcase == ".coffee"
+        ext.casecmp(".coffee").zero?
       end
 
-      def output_ext(ext)
+      def output_ext(_ext)
         ".js"
       end
 
