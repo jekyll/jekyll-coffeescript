@@ -5,6 +5,7 @@
 ### Development Fixes
 
   * Test against Ruby 2.1 to 2.4 (#20)
+  * Define path with __dir__ (#18)
 
 ## 1.0.2 / 2016-12-15
 
