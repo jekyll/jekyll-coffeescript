@@ -2,6 +2,10 @@
 
   * Stop testing Ruby 1.9 (#17)
 
+### Development Fixes
+
+  * Test against Ruby 2.1 to 2.4 (#20)
+
 ## 1.0.2 / 2016-12-15
 
   * Lock coffee-script-source (#16)
