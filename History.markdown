@@ -1,13 +1,14 @@
 ## HEAD
 
-  * Stop testing Ruby 1.9 (#17)
+## 1.1.0 / 2017-12-03
 
 ### Development Fixes
 
+  * Stop testing Ruby 1.9 (#17)
   * Test against Ruby 2.1 to 2.4 (#20)
+  * Stop testing against Jekyll 2.5 (#22)
   * Define path with __dir__ (#18)
   * Inherit Jekyll&#39;s rubocop config for consistency (#19)
-  * Stop testing against Jekyll 2.5 (#22)
   * Add Rubocop to CI (#21)
 
 ## 1.0.2 / 2016-12-15
