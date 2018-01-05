@@ -1,5 +1,9 @@
 ## HEAD
 
+### Development Fixes
+
+  * Test against Ruby 2.5 (#25)
+
 ## 1.1.0 / 2017-12-03
 
 ### Development Fixes
