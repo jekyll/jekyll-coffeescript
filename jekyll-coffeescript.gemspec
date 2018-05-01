@@ -16,6 +16,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR).grep(%r!(lib/)!)
   spec.require_paths = ["lib"]
 
+  spec.required_ruby_version = ">= 2.3.0"
+
   spec.add_runtime_dependency "coffee-script", "~> 2.2"
   spec.add_runtime_dependency "coffee-script-source", "~> 1.11.1"
 
