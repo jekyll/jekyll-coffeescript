@@ -1,3 +1,9 @@
+## HEAD
+
+### Minor Enhancements
+
+  * Require Ruby 2.3 (#27)
+
 ## 1.1.1 / 2018-02-03
 
 ### Development Fixes
