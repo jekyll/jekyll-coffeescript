@@ -1,10 +1,7 @@
-inherit_gem:
-  jekyll: .rubocop.yml
+require: rubocop-jekyll
 
-AllCops:
-  TargetRubyVersion: 2.3
-  Exclude:
-    - vendor/**/*
+inherit_gem:
+  rubocop-jekyll: .rubocop.yml
 
 Metrics/LineLength:
   Exclude:
