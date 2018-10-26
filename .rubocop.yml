@@ -2,16 +2,3 @@ require: rubocop-jekyll
 
 inherit_gem:
   rubocop-jekyll: .rubocop.yml
-
-Metrics/LineLength:
-  Exclude:
-    - spec/**/*
-    - jekyll-coffeescript.gemspec
-
-Metrics/BlockLength:
-  Exclude:
-    - spec/**/*
-
-Layout/IndentHeredoc:
-  Exclude:
-    - spec/**/*
