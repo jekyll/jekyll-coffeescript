@@ -8,41 +8,41 @@ describe(Jekyll::Converters::CoffeeScript) do
     Jekyll::Converters::CoffeeScript.new(configuration)
   end
   let(:coffeescript_content) do
-    <<-COFFEESCRIPT
-# Functions:
-square = (x) -> x * x
+    <<~COFFEESCRIPT
+      # Functions:
+      square = (x) -> x * x
 
-# Arrays:
-list = [1, 2, 3, 4, 5]
+      # Arrays:
+      list = [1, 2, 3, 4, 5]
 
-# Objects:
-math =
-  root:   Math.sqrt
-  square: square
-  cube:   (x) -> x * square x
-COFFEESCRIPT
+      # Objects:
+      math =
+        root:   Math.sqrt
+        square: square
+        cube:   (x) -> x * square x
+    COFFEESCRIPT
   end
   let(:js_content) do
-    <<-JS
-(function() {
-  var list, math, square;
+    <<~JS
+      (function() {
+        var list, math, square;
 
-  square = function(x) {
-    return x * x;
-  };
+        square = function(x) {
+          return x * x;
+        };
 
-  list = [1, 2, 3, 4, 5];
+        list = [1, 2, 3, 4, 5];
 
-  math = {
-    root: Math.sqrt,
-    square: square,
-    cube: function(x) {
-      return x * square(x);
-    }
-  };
+        math = {
+          root: Math.sqrt,
+          square: square,
+          cube: function(x) {
+            return x * square(x);
+          }
+        };
 
-}).call(this);
-JS
+      }).call(this);
+    JS
   end
 
   context "matching file extensions" do
