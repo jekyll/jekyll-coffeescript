@@ -4,6 +4,10 @@
 
   * Require Ruby 2.3 (#27)
 
+### Major Enhancements
+
+  * style: Target Ruby 2.4 (#31)
+
 ## 1.1.1 / 2018-02-03
 
 ### Development Fixes
