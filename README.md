@@ -26,6 +26,13 @@ $ gem install jekyll-coffeescript
 
 **Notes: `jekyll-coffeescript` requires Ruby 2.3 or greater. Additionally, the dependency on `execjs` means you must also have a [valid JavaScript runtime](https://github.com/sstephenson/execjs#execjs) available to your project**
 
+You also need to add this plugin to your `_config.yml` file:
+
+```
+plugins:
+  - jekyll-coffeescript
+```
+
 ## Usage
 
 In your Jekyll site, create CoffeeScript files that start with the following
