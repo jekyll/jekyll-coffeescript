@@ -8,6 +8,10 @@
 
   * style: Target Ruby 2.4 (#31)
 
+### Documentation
+
+  * Add essential step to readme (#32)
+
 ## 1.1.1 / 2018-02-03
 
 ### Development Fixes
