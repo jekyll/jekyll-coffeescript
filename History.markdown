@@ -2,11 +2,9 @@
 
 ### Development Fixes
 
-  * Require Ruby 2.3 (#27)
-
-### Major Enhancements
-
-  * style: Target Ruby 2.4 (#31)
+  * Drop support for Ruby < 2.4
+  * Allow Jekyll v4 (still alpha)
+  * Style: Target Ruby 2.4 (#31)
 
 ### Documentation
 
