@@ -1,3 +1,9 @@
+## 1.2.2 / 2019-03-24
+
+### Bug Fixes
+
+  * Revert `jekyll` to be just a `development_dependency` for `v1.x.x` series.
+
 ## 1.2.1 / 2019-03-23
 
 ### Bug Fixes
