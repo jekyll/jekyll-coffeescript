@@ -24,7 +24,7 @@ Or install it yourself as:
 $ gem install jekyll-coffeescript
 ```
 
-**Notes: `jekyll-coffeescript` requires Ruby 2.3 or greater. Additionally, the dependency on `execjs` means you must also have a [valid JavaScript runtime](https://github.com/sstephenson/execjs#execjs) available to your project**
+**Notes: `jekyll-coffeescript` requires Ruby 2.3 or greater. Additionally, the dependency on `execjs` means you must also have a [valid JavaScript runtime](https://github.com/rails/execjs#execjs) available to your project**
 
 You also need to add this plugin to your `_config.yml` file:
 
