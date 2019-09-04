@@ -1,3 +1,9 @@
+## HEAD
+
+### Documentation
+
+  * update README.md (#36)
+
 ## 1.2.2 / 2019-03-24
 
 ### Bug Fixes
