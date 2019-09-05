@@ -2,8 +2,8 @@ language: ruby
 cache: bundler
 rvm:
   - &latest_ruby 2.6
+  - 2.5
   - 2.4
-  - 2.3
 env:
   matrix:
     - JEKYLL_VERSION="~> 3.8"
@@ -12,7 +12,7 @@ matrix:
     - rvm: *latest_ruby
       env: JEKYLL_VERSION="~> 3.7.4"
     - rvm: *latest_ruby
-      env: JEKYLL_VERSION=">= 4.0.0.pre.alpha1"
+      env: JEKYLL_VERSION="~> 4.0"
     - rvm: *latest_ruby
       script: script/fmt
 branches:
