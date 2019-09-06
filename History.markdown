@@ -1,12 +1,9 @@
-## HEAD
-
-### Documentation
-
-  * update README.md (#36)
+## 2.0 / 2019-09-06
 
 ### Major Enhancements
 
   * Require Ruby 2.4 or greater (#38)
+  * Require Jekyll 4.0
 
 ## 1.2.2 / 2019-03-24
 
