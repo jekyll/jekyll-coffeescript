@@ -4,6 +4,10 @@
 
   * update README.md (#36)
 
+### Major Enhancements
+
+  * Require Ruby 2.4 or greater (#38)
+
 ## 1.2.2 / 2019-03-24
 
 ### Bug Fixes
